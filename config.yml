@@ -1,0 +1,5 @@
+baseURL: "https://springdaykikou.com/"
+title: 春日纪行
+paginate: 5
+theme: PaperMod
+defaultContentLanguage: zh
