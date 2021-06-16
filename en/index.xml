@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on 春日紀行</title>
-    <link>https://springdaykikou.com/tags/</link>
-    <description>Recent content in Tags on 春日紀行</description>
+    <title>Springdaykikou</title>
+    <link>https://springdaykikou.com/en/</link>
+    <description>Recent content on Springdaykikou</description>
     <image>
       <url>https://springdaykikou.com/favicon-original.jpeg</url>
       <link>https://springdaykikou.com/favicon-original.jpeg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://springdaykikou.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://springdaykikou.com/en/index.xml" rel="self" type="application/rss+xml" />
+    
   </channel>
 </rss>
