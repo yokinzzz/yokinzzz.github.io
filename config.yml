@@ -1,5 +1,161 @@
 baseURL: "https://springdaykikou.com/"
-title: 春日纪行
+title: 春日紀行
 paginate: 5
 theme: PaperMod
 defaultContentLanguage: zh
+hasCJKLanguage: true
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: G-1DDEWH5QZE
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+languages:
+    zh:
+        languageName: 中文
+        weight: 1
+        menu:
+            main:
+                - identifier: search
+                  name: 搜索
+                  url: /search
+                  weight: 5
+                - identifier: tags
+                  name: 标签
+                  url: tags
+                  weight: 5
+    en:
+        languageName: English
+        languageAltTitle: English
+        weight: 10
+        title: Springdaykikou
+        homeInfoParams:
+            Title: "🌸SpringdayKikou"
+            Content: >
+                Just another developer's blog.
+
+                - Althogh I'm a 👨‍💻‍, coding is just a small part in my life, so it's not really a developer's blog.
+
+                - Including things about develope, ACGN and my own life.
+        menu:
+            main:
+                - identifier: search
+                  name: Search
+                  url: /search
+                  weight: 5
+                - identifier: tags
+                  name: Tags
+                  url: /tags/
+                  weight: 20
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: 春日紀行
+    description: a simple personal blog
+    keywords: ["Blog"]
+    author: yokinzzz
+    # author: ["Me", "You"] # multiple authors
+    images: ["/favicon-original.jpeg"]
+    DateFormat: "Monday, May 17, 2021"
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
+    displayFullLangName: true
+
+    ShowReadingTime: true
+    ShowShareButtons: false
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "/favicon.ico"
+        favicon16x16:  "/favicon-16x16.png"
+        favicon32x32:  "/favicon-32x32.png"
+
+    label:
+        text: "Home"
+        icon: /apple-touch-icon.png
+        iconHeight: 35
+
+    # profile-mode
+#    profileMode:
+#        enabled: false # needs to be explicitly set
+#        title: ExampleSite
+#        subtitle: "This is subtitle"
+#        imageUrl: "<img location>"
+#        imageWidth: 120
+#        imageHeight: 120
+#        imageTitle: my image
+#        buttons:
+#            - name: Posts
+#              url: posts
+#            - name: Tags
+#              url: tags
+
+    # home-info mode
+    homeInfoParams:
+        Title: "🌸春日紀行"
+        Content: >
+            一个普通程序员的个人博客。
+
+            - 虽然是👨‍💻‍，但Coding只是生活的一部分，所以这不是一个单纯的技术博客。
+
+            - 博客内容包括但不限于IT技术、ACGN和生活日常。
+
+#    socialIcons:
+#        - name: twitter
+#          url: "https://twitter.com/"
+#        - name: stackoverflow
+#          url: "https://stackoverflow.com"
+#        - name: github
+#          url: "https://github.com/"
+
+    analytics:
+        google:
+            SiteVerificationTag: "m9eozrjxVX-EjuqAE_2UJ28OaYMLg8PjairtFXt7Q-Y"
+#        bing:
+#            SiteVerificationTag: "XYZabc"
+#        yandex:
+#            SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: "https://github.com/yokinzzz/yokinzzz.github.io/tree/main/content/"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
