@@ -7,21 +7,20 @@ date: '{{ now.Format "Monday, January 2, 2006"}}'
 tags: ["first"]
 author: yokinzzz
 # author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: false
-draft: false
-hidemeta: false
+showToc: false # 展示目录
+TocOpen: false # 打开目录
+draft: false # 是否为草稿
+hidemeta: false # 是否展示元信息(作者等)
 comments: false
 description: "描述信息写在这"
 canonicalURL: "post原始网址"
-disableHLJS: true # to disable highlightjs
-disableShare: true
-disableHLJS: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
+disableHLJS: true # 是否启用高亮JS脚本
+disableShare: true # 是否禁止分享
+hideSummary: true # 是否隐藏简介
+searchHidden: false # 是否可以搜索
+ShowReadingTime: true # 是否展示阅读时间
+ShowBreadCrumbs: true # 是否展示文章路径
+ShowPostNavLinks: true # 是否展示下一篇文章
 cover:
     image: "<image path/url>" # 文章封面
     alt: "<alt text>" # 图片若未加载，展示的文字
