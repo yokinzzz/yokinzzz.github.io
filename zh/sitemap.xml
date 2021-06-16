@@ -26,6 +26,18 @@
                 href="https://springdaykikou.com/tags/"
                 />
   </url><url>
+    <loc>https://springdaykikou.com/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://springdaykikou.com/en/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://springdaykikou.com/archives/"
+                />
+  </url><url>
     <loc>https://springdaykikou.com/search/</loc>
     <xhtml:link
                 rel="alternate"
